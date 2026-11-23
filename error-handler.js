@@ -1,0 +1,1 @@
+window.addEventListener("error",function(e){var d=document.getElementById("err");d.style.display="block";d.textContent+="ERROR: "+(e.message||"a script failed to load (check your internet)")+(e.lineno?" (line "+e.lineno+")":"")+"\n";},true);
