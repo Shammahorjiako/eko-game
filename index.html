@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap">
 <link rel="stylesheet" href="style.css">
+<style>#lvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}#lshade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(6,9,14,.75) 0,rgba(6,9,14,.35) 55%,rgba(6,9,14,.15) 100%)}#load>*:not(#lvid):not(#lshade){position:relative;z-index:2}.lfoot{position:absolute!important}</style>
 </head><body>
 <noscript>EKO needs JavaScript and WebGL. Please enable JavaScript.</noscript>
 <div id="err" style="display:none;position:fixed;left:0;right:0;top:0;z-index:99;background:#b00020;color:#fff;padding:10px 14px;font:12px monospace;white-space:pre-wrap"></div>
@@ -17,7 +18,7 @@
 <p>WASD move, Shift sprint, Space jump, E hold at a wall to climb, Mouse look (or arrow keys, or hold right-click and drag), Click shoot, F enter or exit car (W/S/A/D drive, Space brake). Find the LOBBY tower in the centre and climb it. The red dummies are stand-ins for real players.</p>
 </div>
 <div id="eko">
-<div id="load" class="on"><div class="lg">EKO</div><div class="lsub">OPEN WORLD</div><div class="ltip" id="ltip"></div><div class="lrow"><span id="lstep"></span><span id="lpct">0%</span></div><div class="lbar"><i id="lbar"></i></div><div class="lfoot">PRE-ALPHA / PROTOTYPE BUILD</div></div>
+<div id="load" class="on"><video id="lvid" src="loading.mp4" autoplay muted loop playsinline preload="auto"></video><div id="lshade"></div><div class="lg">EKO</div><div class="lsub">OPEN WORLD</div><div class="ltip" id="ltip"></div><div class="lrow"><span id="lstep"></span><span id="lpct">0%</span></div><div class="lbar"><i id="lbar"></i></div><div class="lfoot">PRE-ALPHA / PROTOTYPE BUILD</div></div>
 <header id="top"><div class="brand">EKO<small>OPEN WORLD</small></div><nav id="nav"><a data-s="play">PLAY</a><a data-s="char">CHARACTER</a><a data-s="world">WORLD</a><a data-s="garage">GARAGE</a></nav><div class="bal">₦ 125,000</div><div class="usr"><b>AYO_01</b><small>LEVEL 01 / NEW ARRIVAL</small></div></header>
 <section class="scr" id="s-play"><div class="pnl"><div class="crumb">01 / CITY LOBBY</div><div class="kick"><i></i>WELCOME TO EKO</div><h1>THE CITY<br>IS YOURS.</h1><p class="lead">One city. Real players. Your own rules.</p><p class="sub">Build a life on the streets of a Nigerian-inspired city.<br>Choose your role. Find your people. Leave your mark.</p><div class="btns"><button class="cta" id="enter">ENTER THE CITY <b>↗</b></button><button class="ghost" data-s="char">CHOOSE YOUR ROLE</button><button class="ghost" id="viewBtn">VIEW: THIRD PERSON</button></div><div class="srv">● EKO-01 / LOCAL PROTOTYPE<br><small>1 / 200 players · Offline test</small><br><small>PC: WASD + mouse · Phone: touch controls · Press ENTER to play</small></div></div>
 <div class="callout"><small>THE HEART OF THE CITY</small><h2>LOBBY</h2><em>Arrivals • Rooftop • Player meetups</em></div>
